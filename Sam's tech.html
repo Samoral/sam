@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+
+          <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    backgrund: #1c1c1a;
+  }
+* {
+margin:0;
+}
+  .nav {
+    width: 100vw;
+   background: pink; 
+   position:sticky;
+   padding-bottom: 15px;
+   display: flex;
+   hight: 60px;
+   z-index:2;
+   top:0;
+   align-items: center;
+  }
+    i {
+      display:inline;
+      margin-left: 8px;
+      margin-top:15px;
+    }
+  .name{
+    diplay:flex;
+    jutify-content: center;
+    width: 100vw;
+    heght: 60px;
+    background: transparent;
+    border:0;
+    outline:none;
+    backround: red;
+    margin-top: 20px;
+    position: absolute;
+  text-align: center;
+  }
+
+main {
+  width:100vw;
+  height: 90vh;
+  display:flex;
+  justify-content: center;
+ align-items: center; 
+}  
+
+container {
+  position:relative;
+  width: 90vw;
+  height: 80vh;
+  
+  box-shadow: 0px 18px 36px grey;
+  border-radius: 1rem;
+  border-top:5px solid pink;
+}  
+.intro_image {
+  position: absolute;
+  tp:0;
+  lft:0;
+  z-index: 2;
+  
+  background-image: url("companyImage.jpg");
+  background-position: center;
+  background-size: cover;
+  
+}
+.intro {
+  z-index:3;
+  opacity: 1;
+  background: rgba(0,0,0,0.6);
+}
+.intro,.intro_image{
+  
+  width: 100%;
+  height: 153px;
+  border-top-left-radius:1rem;
+  border-top-right-radius: 1rem;
+  backgound:linear-gradient(black,red);
+  backgrund: rgba(125,125,125,0.1);
+text-align: center;
+color: gold;
+font-size:bolder;
+position: absolute;
+overflow: hidden;
+white-space:normal;
+word-wrap: break-word;
+text-overflow: ellipsis;
+transition-duration: 1.5s;
+
+}  
+.readMore:active {
+  background:blue;
+  transition-duration: 0.4s;
+}
+.logo {
+  height:450px;
+  border-bottom-right-radius: 1rem;
+border-bottom-left-radius: 1rem;
+  background-image: url("companyLogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  height: 65px;
+  background:#663300;
+  color:white;
+  postion: fixed;
+  bottom:0;
+  border-top:4px solid red;
+}
+
+.vision,.mission{
+  
+  border-radius: 2rem;
+  background:yellow;
+  margin:0 0 auto;
+  transform: scale(0.8);
+  display: block;
+  padding: 15px;
+  transition-duration: 0.5s;
+  box-shaow: 0px 10px 58px #111;
+}
+cont {
+  height: 470px;
+  overflow: hidden;
+  background: #964b00;
+}
+.meet {
+  background:url(ceo.jpg);
+  
+}
+.meet2 {
+background: url(president.jpg);
+}
+.meet,.meet2{
+ opacity: 0.3; 
+  height:350px;
+  width: 86%;
+  margin:0  auto;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 2rem;
+  transition-duration: .5s;
+  margin-top: 15px;
+}
+ .meet > button,.meet2>button {
+   width: 100%;
+   left:0;
+   color: yellow;
+   border-bottom-left-radius: 2rem;
+     border-bottom-right-radius: 2rem;
+   bottom:0;
+   border:0;
+   padding: 0;
+   position: absolute;
+   background: rgba(1,1,1,0.5);
+ }
+  </style>      
+        
+        <title>SAM'Z Tech</title>
+    </head>
+    <body >
+      <div class="nav">
+       <i class="fa fa-list"></i><button class="name"><h3>Sam'Z Tech</h3></button> 
+  </div> 
+  
+  <main>
+  
+  <container>
+    <div class="intro_image"></div>
+   <div class="intro" ><h5>Welcome to Sam'Z Tech, a website and application managing firm</h5> <br /> 
+<h6>
+At Sam'Z Tech, we specialize in crafting exceptional digital experiences. Our expert team provides comprehensive services, including website design and development, mobile application development, e-commerce solutions, and content management systems. We also offer search engine optimization, website maintenance, and updates to ensure our clients' online presence remains robust. <b style="color:yellowgreen;font-weight:bolder;font-size:13px;" class="readMore">Read More</b>
+
+Our consulting services help businesses define their online strategy and goals. By leveraging the latest technologies and trends, we deliver user-friendly and engaging digital solutions that drive results. Trust us to elevate your online presence and take your business to the next level. </h6></div> 
+<br />
+
+<div class="logo">
+ <button class="lrnMre"style="padding:20px;bottom:-2px;right:0;position:absolute;background:rgba(0,0,0,0.5);border:0;border-radius:1rem;color:yellowgreen;font-weight:bolder;" >Learn More >>></button>
+
+
+  </container>  
+    </main>
+    
+  <cont id="cont">
+  <div class="vision">
+    <h2>Our Vision</h2>
+    Sam'Z Tech, a innovative website and application creation company, envisions a digital landscape where ideas come to life. Our vision is to empower individuals and businesses to reach new heights by crafting cutting-edge, user-centric solutions. We strive to bridge the gap between technology and creativity, fostering a culture of innovation and excellence. With a passion for problem-solving, our team of experts designs and develops bespoke websites and applications that exceed expectations. At Sam'Z Tech, we believe in harnessing the power of technology to drive growth, improve lives, and make a meaningful impact. Our mission is to turn visions into reality, one pixel at a time.
+  </div>
+ 
+ <div class="mission">
+   
+
+Our mission at Sam'Z Tech is to design and develop innovative digital solutions that transform businesses and lives. We are dedicated to delivering high-quality websites and applications that meet our clients' unique needs and exceed their expectations. With a commitment to excellence, creativity, and customer satisfaction, we strive to build long-lasting relationships and make a positive impact in the digital world.
+ </div>
+ 
+ <h2 style="background:#eee">Meet The Team</h2>
+ <div class="meet">
+  
+ 
+ <button style="">Samoral Damx Adeyemi <br />  <b style="color:white">CEO at Sam'Z Tech </b></button>  
+   
+ </div>
+ 
+  <div class="meet2">
+  
+ 
+ <button style="">Adeyemi Oluwadamilola Shulamite<br /> <b style="color:white">President at Sam'Z Tech </b></button>  
+   
+ </div>
+ 
+</cont> 
+ <footer>
+   © Sam'Z Tech  <br />
+     2024 <center>Email: damolaadeyemi19@gmail.com</center>
+ </footer> 
+  
+  <script>
+    $(".readMore").hover(()=>{
+ 
+ $(".readMore").hide();
+ 
+ $(".intro,.intro_image").height("250px")
+ 
+ $(".logo").click(()=>{
+   $(".readMore").show();
+ 
+ $(".intro,.intro_image").height("153px")
+ })
+      
+    })
+  
+ 
+    
+$(".lrnMre").click(()=>{
+$("main").slideUp(1000)
+})
+    
+ $("cont").on("touchstart",function(e) {
+ clientMsgX_down = e.touches[0].clientX;
+ 
+ clientMsgY_down = e.touches[0].clientY
+  
+  
+})
+
+
+ $(".vision,.mission").on("touchmove",function(e) {
+   
+  if(!clientMsgX_down || !clientMsgY_down) {
+    return;
+  }
+   
+ var clientMsgX_up = e.touches[0].clientX;
+ 
+var clientMsgY_up = e.touches[0].clientY;
+
+var xDiff = clientMsgX_down - clientMsgX_up;
+
+var yDiff = clientMsgY_down- clientMsgY_up
+
+if(Math.abs(xDiff) > Math.abs(yDiff)) {
+ 
+ if(xDiff<0) {
+
+alert()
+
+
+ }
+} 
+else {
+if(yDiff>0) {
+  $(".vision").css({"transform":"scale(0)"})
+  $(".vision").hide(500)
+
+
+}
+
+else {
+  
+//  $(".vision").slideDown()
+$(".vision").css({"transform":"scale(0.8)"})  
+  $(".vision").show()
+  
+}
+}
+
+
+
+   
+ })
+ 
+ $(".meet").on("touchmove",function(e) {
+   
+  if(!clientMsgX_down || !clientMsgY_down) {
+    return;
+  }
+   
+ var clientMsgX_up = e.touches[0].clientX;
+ 
+var clientMsgY_up = e.touches[0].clientY;
+
+var xDiff = clientMsgX_down - clientMsgX_up;
+
+var yDiff = clientMsgY_down- clientMsgY_up
+
+if(Math.abs(xDiff) > Math.abs(yDiff)) {
+ 
+ if(xDiff<0) {
+
+alert()
+
+
+ }
+} 
+else {
+  
+if(yDiff>0) {
+  if($(".mission").is(":hidden")==false) {
+  $(".mission").css("transform","scale(0)")
+    $(".mission").hide(500)
+ $("cont").css("background","white") 
+ $(".meet").css("opacity","1")  
+   
+}
+
+else {
+  $(".meet").css("transform","scale(0)")
+$(".meet2").css("opacity","1")  
+    $(".meet").hide(500)
+}
+
+}
+else {
+  if($(".mission").is(":hidden")==true) {
+  $(".mission").css("transform","scale(0.8)")
+  $(".mission").show(500)
+  
+}
+
+else {
+ // $(".vision").slideDown()
+$(".vision").css({"transform":"scale(0.8)"})  
+  $(".vision").show(500)
+  $(".meet").css("opacity","0.3")  
+}
+
+}
+}
+
+
+   
+ })
+ 
+ 
+  $(".meet2").on("touchmove",function(e) {
+   
+  if(!clientMsgX_down || !clientMsgY_down) {
+    return;
+  }
+   
+ var clientMsgX_up = e.touches[0].clientX;
+ 
+var clientMsgY_up = e.touches[0].clientY;
+
+var xDiff = clientMsgX_down - clientMsgX_up;
+
+var yDiff = clientMsgY_down- clientMsgY_up
+
+if(Math.abs(xDiff) > Math.abs(yDiff)) {
+ 
+ if(xDiff<0) {
+
+alert()
+
+
+ }
+} 
+else {
+  
+if(yDiff>0) {
+  
+
+
+  $(".meet").css("transform","scale(0)")
+    $(".meet").hide(500)
+    $(".meet2").css("opacity","1")  
+}
+
+
+else {
+  $(".meet").show(500)
+  $(".meet").css("transform","scale(1)")
+    
+    $(".meet2").css("opacity","0.3")  
+}
+}
+
+
+   
+ })
+ 
+
+$("cont").on("touchend",function(e) {
+ 
+//chtG_clientMsg_label.css({"margin-top":"10px","margin-right":"2px"}) 
+ 
+ 
+})   
+  </script> 
+   
+    </body>
+    
+    </html>
